@@ -1,0 +1,24 @@
+<html>
+    <head> 
+        <title> assignment 1</title>
+    </head>
+    <body>
+        <h1> Date formats </h1>
+        <h3>mm-dd-yy: <p id="format1"></p> </h3>
+        <h3>dd-mm-yy: <p id="format2"></p> </h3>
+        
+        <script>
+            var x = new Date();
+            date = x.getDate();
+            month = x.getMonth()+1;
+            year = x.getFullYear();
+
+            mdy = month + '-' + date + '-' + year;
+            dmy = date + '-' + month + '-' + year;
+            
+            document.getElementById("format1").innerHTML = mdy;
+            document.getElementById("format2").innerHTML = dmy;
+                
+        </script>
+    </body>
+</html>

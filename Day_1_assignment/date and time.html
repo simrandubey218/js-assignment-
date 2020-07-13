@@ -1,0 +1,29 @@
+<html>
+    <head> 
+        <title> assignment 1</title>
+    </head>
+    <body>
+        <h1> Use of js date and time function </h1>
+        <h3>Today is: <p id="demo"></p></h3>
+        <h3>Current time is: <p id="demo1"></p></h3>
+        
+        <script>
+            var x = new Date();
+            hrs = x.getHours();
+            min = x.getMinutes();
+            sec = x.getSeconds();
+            
+            day= ["sunday", "monday", "tuesday", "wednesday", "Thursday", "Friday", "Saturday"]
+            document.getElementById("demo").innerHTML = day[x.getDay()];
+
+            format = hrs >= 12 ? 'PM' : 'AM'; 
+            hrs = hrs % 12;  
+            hrs = hrs ? hrs : 12;  
+            min = min < 10 ? '0' + min : min; 
+
+            time = hrs + format + ':' + min + ':' + sec;
+            document.getElementById("demo1").innerHTML = time;
+                
+        </script>
+    </body>
+</html>
