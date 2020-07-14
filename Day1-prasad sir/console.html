@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> console objects </title>
+</head>
+<body>
+    <h1> This is a trial of console objects </h1>
+    <h3> Press f12 to checkout the outputs on console. </h3>
+    <script>
+
+        console.log("Wassup ;)"); // gives output on the console, used for testing
+        
+        console.assert(document.getElementById("demo"), "this message is displayed because there is no tag with id DEMO i.e false assertion #console.assert"); // check on console
+
+        console.time();
+        for (i = 0; i < 100000; i++) 
+        {
+            // some code
+        }
+        console.timeEnd();
+
+        console.info("FYI that time is displayed by #console.time #console.info");
+
+        console.error("this mssg is diplayed because there's an error #console.error :x"); 
+
+        console.log("lets make a table here using #console.table. also if u dont find a table here please refresh again :)");
+
+        console.table(["burger", "pizza", "cake", "i'm foodie"]);
+
+        console.warn("well here's a warning again using #console.warn :0")
+
+        console.group("Formed a new group here #console.group");
+
+        console.groupCollapsed("group will now be collapsed #console.groupcollapsed");
+
+        console.groupEnd();
+
+        
+        console.log("the above group will now be ended using #console.groupend");
+
+        </script>
+</body>
+</html>
