@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Some more methods of Strings and arrays in JS. </h1>
+    <h3> Checkout some examples in the console. Press f12 </h3>
+    <ol><b><u> String: </u></b>
+    <ul>
+        <p> Following are the basic string methods. </p>
+        <li>str.length()</li>
+        <li>str.toLowerCase()</li>
+        <li>str.toUpperCase</li>
+        <li>str[index no]</li>
+        <li>str.indexOf()</li>
+        <li>str.lastindexOf()</li>
+        <li>str.charAt()</li>
+        <li>str.endsWith()</li>
+        <li>str.split()</li>
+        <p> Following are some other methods. </p>
+        
+        <li>str.search() </li>
+        <script>
+            let str = " google, safari, firefox or bing? ";
+            console.log(str);
+            console.log("1) str.search() will give the index position of str 'firefox'");
+            console.log(str.search("firefox"));
+        </script>
+        
+        <li>str.slice()</li>
+        <script>
+            console.log("2) I want to extract just 'google, safari' part. str.slice(0,15) helps.");
+            console.log(str.slice(0,15));
+            console.log("We can also extract a string using negative indexing like slice(-5,) will give: ")
+            console.log(str.slice(-6,))
+        </script>
+        
+        <li>str.substring()</li>
+        <script>
+            console.info("3) Next we have str.substring(). This works exactly like slice() except u can't give negative index as input here.");
+            console.error("Eg: str.substring(-6,-1) is invalid");
+        </script>
+
+        <li>str.replace()</li>
+        <script> 
+           console.log("4) Now lets replace safari with yahoo using str.replace('safari', 'yahoo')");   
+           console.log(str.replace('safari', 'yahoo'));    
+        </script>
+
+        <li>str.replaceAll()</li>
+        <script>
+            let phrase = "cakes and strawberries, strawberries and cakes";
+            console.log(`5) ${phrase}. Hmm, delicious but we can also replace all the berries with some jellies using phrase.replaceall('strawberries', 'jellies')`);
+        </script>
+
+        
+    </ul><br>
+    <b><u> Array: </u></b>
+    <ul>
+        <p> Following are basic array methods. </p>
+        <li> arr.isArray() </li>
+        <li> arr.reverse() </li>
+        <li> arr.concat() </li>
+        <li> arr.unshift() </li>
+        <li> arr.shift() </li>
+        <li> arr.push() </li>
+        <li> arr.pop() </li>
+        <p> Following are some other methods.</p>
+        <li>arr.toString()</li>
+        <script>
+            let arr = ['U.S.A', 'U.K', 'U.A.E'];
+            console.log(`Let's consider an array: ${arr}`);
+            console.log('to convert this array into a string we can use arr.toString()');
+            console.log(arr.toString());
+        </script>
+
+        <li>arr.join()</li>
+        <script>
+            console.log("To convert this array into a string separated with spaces in between we'll use arr.join(', ')");
+            console.log(arr.join(", "));
+        </script>
+
+        <li>arr.length()</li>
+        <script>
+            console.log("")
+        </script>
+        
+        <li>arr.splice()</li>
+        <script>
+            let arr1 = ["U.S.A", "U.K", "U.A.E", "India", "Sweden"];
+            console.log(`arr.splice(2, 0, "India", "Sweden")`);
+            console.log("We used arr.splice(2,0,'India','Sweden') where 2 is the index after which items will be added, 0 is the no of items to be removed and following are the items to be added");
+        </script>
+
+        <li>arr.slice()</li>
+        <script>
+            console.log("To extract out certain elements of an array we can use arr.slice(1,4) ");
+            console.log(arr1);
+            console.log(arr.slice(1,4));
+        </script>
+    
+    </ul>
+    </ol>
+
+
+</body>
+</html>
