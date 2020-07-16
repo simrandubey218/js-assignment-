@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Even or Odd</title>
+</head>
+<body>
+    <h1> Let's check whether a number is odd or even using JS functions </h1>
+    <input id="number" name="number" placeholder="Enter a number">
+    <button onclick = "even_odd()"> Check </button>
+    <hr>
+    <p>Press f12 to checkout the output</p>
+
+    <script>
+        function even_odd(){
+            let num = document.getElementById("number").value;
+            if (num%2 == 0){
+                let output = "Number is even!";
+                console.log(output);
+               }
+            else if (num%2 != 0){
+                let output = "Number is odd!";
+                console.log(output);
+            }
+            else{
+                console.log("Enter valid number");
+            }
+        }
+        
+    </script>
+</body>
+</html>

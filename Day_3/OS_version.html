@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OS_Version </title>
+</head>
+<body>
+    <h1> Enter your OS and its version separated by a space</h1>
+    <input name="os" id="os">
+    <button onclick="print()"> checkout </button>
+    <br><hr>
+    <p> Press f12 to checkout the output </p>
+
+    <script>
+        function print(){
+            let str = document.getElementById("os").value;
+            let arr = str.split(" ");
+            let name = arr[0];
+            let ver = arr[1];
+            console.log(` The OS name is ${name} and version is ${ver} `);
+        }
+    </script>
+</body>
+</html>
