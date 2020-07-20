@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , initial-scale=1.0">
+    <title> Question 2 Destructuring modernjs</title>
+</head>
+<body> 
+    <h1> Question 2 Destructuring modernjs </h1>
+    <br>
+    <hr>
+    <h3> Press f12 to checkout the output </h3>
+
+    <script>
+        const student = {
+            name: "Helsinki",
+            age: 24,
+            projects:{
+                dicegame: "Two player dice game using java script"
+                }
+            }
+        console.log("student name is: ", student.name);
+        console.log("Student age is: ", student.age);
+        console.log("Student's project name: ", student.projects.dicegame);
+
+        let {name, age, projects:{dicegame}} = student;
+        console.log(name,age,dicegame);
+
+    </script>
+</body>
+</html>

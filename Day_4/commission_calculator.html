@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", initial-scale=1.0">
+    <title>Reward calculator</title>
+</head>
+<body>
+    <h1>Let's check your Reward</h1>
+    <br>
+    <input type="text" id="sales" placeholder="Enter sales amount">
+    <button onclick="reward()"> Claim </button>
+    <br><br>
+    <hr>
+    <p> Press f12 to checkout the console </p>
+
+    <script>
+        function reward(){
+            let x = document.getElementById("sales").value;
+            
+            if (x >= 0 && x <= 5000){
+                comm = (x * 2)/100;
+                rwd = Number(x) + Number(comm);
+            }
+            else if (x >= 5001 && x <= 10000){
+                comm = (x * 5)/100;
+                rwd = Number(x) + Number(comm);
+            }
+            else if (x >= 10001 && x <= 20000){
+                comm = (x * 7)/100;
+                rwd = Number(x) + Number(comm);
+            }
+            else if (x > 20000){
+                comm = (x * 10)/100;
+                rwd = Number(x) + Number(comm);
+            }
+            console.log(` Commission earned is ${comm} and total reward is ${rwd} `); 
+        }
+    </script>
+</body>
+</html>

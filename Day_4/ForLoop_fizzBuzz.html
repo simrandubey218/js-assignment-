@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 for loop</title>
+</head>
+<body>
+    <h1> Let's create a for loop that iterates upto 100 and displays "fizz" at multiples of 3 while "buzz" at multiples of 5. </h1>
+    <h1> Also "fizzbuzz" at multiples of 3 and 5.</h1>
+    <br>
+    <hr>
+    <p> Press f12 to checkout the output </p>
+
+    <script>
+        for (i = 1; i <= 100; i++){
+            if (i % 3 == 0 && i % 5 == 0){
+                console.log(` i=${i} Fizzbuzz `);
+            }
+            else if (i % 3 == 0){
+                console.log(` i=${i} Fizz`);
+            }
+            else if (i % 5 ==0){
+                console.log(` i=${i} Buzz`);
+            }
+        }
+    </script>
+</body>
+</html>
