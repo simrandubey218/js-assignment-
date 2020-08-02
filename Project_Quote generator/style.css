@@ -1,0 +1,22 @@
+.content{
+    background-color: dimgray;
+    margin: auto;
+    width: 1000px;
+    height: 550px;
+    padding: 50px;
+}
+
+.card{
+    background-color: rgb(113, 129, 221);
+    margin: auto;
+    padding: 20px;
+    width: 700px;
+    height: 200px;
+    text-align: center;
+}
+
+#btn{
+    width: 250px;
+    height: 50px;
+    border: none;
+}
